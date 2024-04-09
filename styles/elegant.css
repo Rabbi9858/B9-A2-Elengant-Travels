@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Shared style */
+body {
+    font-family: "Mulish", sans-serif;
+    max-width: 1170px;
+    margin: auto;
+}
+
+.btn-primary {
+    border: 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 15px 34px;
+    color: rgb(255, 255, 255);
+    background-color: tomato;
+
+}
+
+.search-bar input:hover {
+    cursor: text;
+}
+
+.section-title {
+    color: rgb(19, 19, 24);
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.section-description {
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgba(19, 19, 24, 0.70);
+}
+
+
+
+
+
+
+/*Nav related Styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 44px;
+}
+
+
+.nav-icon {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Banner related styles */
+
+.banner {
+    height: 500px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+}
+
+.banner-content {
+    padding: 70px;
+    text-align: center;
+    align-items: center;
+}
+
+.banner-title {
+    color: #fff;
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.banner-des{
+    color: #fff;
+    
+}
+
+
+.search-bar {
+    display: inline-flex;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+
+.search-bar input[type="text"] {
+    padding: 16px 30px;
+    border-radius: 8px;
+    border: none;
+    color: rgba(19, 19, 24, 0.50);
+    font-family: Mulish;
+    font-weight: 400;
+
+}
+
+/* About related styles */
+
+.about {
+    display: flex;
+    margin-top: 100px;
+    gap: 100px;
+}
+.about-content{
+    margin-top: 0px;
+}
+.about-content .section-title{ margin-top: 0; margin-bottom: 24px;}
+.about-content .btn-primary{ margin-top: 32px;}
+.section-description li {
+    margin-top:25px;}
+.about-content ul{margin: ;24px;}
