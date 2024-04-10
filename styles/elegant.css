@@ -16,6 +16,15 @@ body {
     background-color: tomato;
 
 }
+.btn-secondary {
+    border: 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 14px 25px;
+    color: rgb(255, 255, 255);
+    background-color: tomato;
+
+}
 
 .search-bar input:hover {
     cursor: text;
@@ -29,7 +38,6 @@ body {
 
 .section-description {
     font-weight: 400;
-    margin-bottom: 20px;
     color: rgba(19, 19, 24, 0.70);
 }
 
@@ -58,7 +66,21 @@ nav li {
 
 .nav-icon {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    color: #FF5400;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.logo-title {
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+    padding-left: 20px;
 }
 
 /* Banner related styles */
@@ -82,9 +104,9 @@ nav li {
     margin-bottom: 40px;
 }
 
-.banner-des{
+.banner-des {
     color: #fff;
-    
+
 }
 
 
@@ -115,11 +137,245 @@ nav li {
     margin-top: 100px;
     gap: 100px;
 }
-.about-content{
+
+.about-content {
     margin-top: 0px;
 }
-.about-content .section-title{ margin-top: 0; margin-bottom: 24px;}
-.about-content .btn-primary{ margin-top: 32px;}
+
+.about-content .section-title {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.about-content .btn-primary {
+    margin-top: 32px;
+}
+
 .section-description li {
-    margin-top:25px;}
-.about-content ul{margin: ;24px;}
+    margin-top: 25px;
+}
+
+.about-content ul {
+    margin: 24px;
+}
+
+/* Gallary Section styles */
+
+.gallary-content {
+    text-align: center;
+}
+
+.row-1 {
+    display: flex;
+    gap: 24px;
+    text-align: center;
+    height: 300px;
+
+}
+
+.row-2 {
+    margin-top: 26px;
+    display: flex;
+    gap: 24px;
+    text-align: center;
+    height: 300px;
+}
+
+.row-3 {
+    display: flex;
+    gap: 24px;
+    text-align: center;
+    height: 300px;
+    margin-top: 12px;
+}
+
+
+
+.thumbnail-text {
+    position: relative;
+    bottom: 150px;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #fff;
+
+}
+
+/* Why Styles Section */
+
+.why {
+    margin-top: 100px;
+}
+
+.why-content {
+    text-align: center;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+}
+
+.service-card-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 24px;
+
+}
+
+.service-card {
+    width: 500px;
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    gap: 24px;
+}
+
+.service-card:nth-child(2) {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.service-card img {
+    height: 64px;
+    width: 64px;
+}
+
+/* Deals & Discount Styles */
+.discount{
+    margin-top:100px ;
+}
+.discount-content{
+
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.resort-1 {
+   padding:25px;
+    height: 500px;
+    background-image: url("../Images/Group\ 39.png");
+    background-repeat: no-repeat;
+}
+
+.resort-2 {
+    padding:25px;
+    height: 500px;
+    background-image: url("../Images/Group\ 40.png");
+    background-repeat: no-repeat;
+}
+.right-ticket{
+    margin-left: 45%;
+}
+
+.resort-3 {
+    padding: 25PX;
+    height: 500px;
+    background-image: url("../Images/Group\ 39.png");
+    background-repeat: no-repeat;
+}
+
+.ticket-container {
+    padding: 52px 50px;
+    width: 500px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+}
+
+
+.ticket-container ul{
+    display: flex;
+    text-align: left;
+    list-style: none;
+    padding: 0px;
+}
+.ticket-container li{
+    margin-left: 20px;
+   
+}
+
+.ticket-price{
+    color: #FF5400;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.explore-btn{
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    body {
+        width: 335px;
+
+    }
+
+    nav,
+    .about,
+    .search-bar {
+        flex-direction: column;
+
+
+    }
+
+    .row-1,
+    .row-2,
+    .row-3 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+        gap: 0px;
+        margin-top: 0px;
+
+    }
+
+
+    .image-container img {
+        width: 335px;
+        height: 176px;
+
+    }
+
+
+    .banner-title {
+        font-size: 1.5rem;
+        margin-bottom: auto;
+    }
+
+
+    .btn-primary {
+        padding: 16px 76px;
+
+    }
+
+    .banner-content {
+        padding: 20px 0px;
+    }
+
+    .about {
+        margin-top: 24px;
+        gap: 24px;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    nav li {
+        margin-left: 0px;
+    }
+
+    .thumbnail-text {
+        bottom: 120px;
+    }
+
+}
