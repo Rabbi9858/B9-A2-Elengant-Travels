@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /* Shared style */
-body {
+main,
+header {
     font-family: "Mulish", sans-serif;
     max-width: 1170px;
     margin: auto;
@@ -16,6 +17,7 @@ body {
     background-color: tomato;
 
 }
+
 .btn-secondary {
     border: 0;
     border-radius: 8px;
@@ -209,7 +211,7 @@ nav li {
 .why-content {
     text-align: center;
     align-items: center;
-    width: 500px;
+    width: 70%;
     margin: auto;
 }
 
@@ -243,10 +245,11 @@ nav li {
 }
 
 /* Deals & Discount Styles */
-.discount{
-    margin-top:100px ;
+.discount {
+    margin-top: 100px;
 }
-.discount-content{
+
+.discount-content {
 
     text-align: center;
     max-width: 500px;
@@ -254,19 +257,24 @@ nav li {
 }
 
 .resort-1 {
-   padding:25px;
-    height: 500px;
+    padding: 25px;
+    height: 100%;
     background-image: url("../Images/Group\ 39.png");
     background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 15px;
+    margin-bottom: 44px;
 }
 
 .resort-2 {
-    padding:25px;
+    padding: 25px;
     height: 500px;
     background-image: url("../Images/Group\ 40.png");
     background-repeat: no-repeat;
+    border-radius: 15px;
 }
-.right-ticket{
+
+.right-ticket {
     margin-left: 45%;
 }
 
@@ -275,6 +283,7 @@ nav li {
     height: 500px;
     background-image: url("../Images/Group\ 39.png");
     background-repeat: no-repeat;
+    border-radius: 15px;
 }
 
 .ticket-container {
@@ -287,39 +296,179 @@ nav li {
 }
 
 
-.ticket-container ul{
+.ticket-container ul {
     display: flex;
     text-align: left;
     list-style: none;
     padding: 0px;
 }
-.ticket-container li{
+
+.ticket-container li {
     margin-left: 20px;
-   
+
 }
 
-.ticket-price{
+.ticket-price {
     color: #FF5400;
     font-size: 1.25rem;
     font-weight: 800;
 }
 
-.explore-btn{
+.explore-btn {
     text-align: center;
 }
 
+/* Video related section */
 
 
+.video {
+    display: flex;
+    margin-top: 100px;
+    gap: 100px;
+}
+
+.Video-content {
+    margin-top: 20px;
+}
+
+.video-content .section-title {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.video-content .btn-primary {
+    margin-top: 32px;
+}
+
+.section-description li {
+    gap: 0px
+}
+
+.video-content ul {
+    margin: 24px;
+    gap: 0px
+}
+
+iframe {
+    border-radius: 20px;
+    margin-top: 24px;
+    height: 450px;
+}
+
+/* Subscribe Section */
+
+.Subscribe-section {
+    display: flex;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+.Subscribe-section img {
+    width: 100%px;
+    height: 100%px;
+    border-radius: 15px;
+}
+
+.social-icons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 15px
+}
+
+.Subscribe-form {
+    padding: 20px;
+    border: 1px solid #FF5400;
+    border-radius: 15px;
+}
+
+.offer-ticket {
+    width: 324px;
+    height: 110px;
+    transform: rotate(-19.628deg);
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FF5400;
+    position: absolute;
+    right: 185px;
+    margin-top: 252px;
+    text-align: center;
+    color: #FFF;
+    
+}
+.ticket-title{
+    font-size: 1.5rem;
+    padding: 0%;
+    margin-bottom: 0%;
+    margin-top:7%;
+}
+.ticket-offer{
+    font-size: 1.75rem;
+    margin: 0%;
+}
+
+/* footer */
+footer {
+    text-align: center;
+
+    background: rgba(19, 19, 24, 0.05);
+    height: 502px;
+    width: 100%;
+
+}
+
+.footer-content {
+    padding-top: 50px;
+    margin: auto;
+    width: 60%;
+    margin-top: 100px;
+    text-align: center;
+    justify-content: center;
+}
+
+footer hr {
+    height: 1px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    width: 80%;
+}
+
+.copyright {
+    margin-bottom: 100px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+form input {
+    padding: 16px 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    gap: 16px;
+}
+
+.form-buttom {
+    width: 100%;
+}
 
 @media screen and (max-width: 576px) {
     body {
-        width: 335px;
+        width: 375px;
+        padding: 12px;
 
     }
 
     nav,
     .about,
-    .search-bar {
+    .search-bar,
+    .video,
+    .Subscribe-section {
         flex-direction: column;
 
 
@@ -377,5 +526,69 @@ nav li {
     .thumbnail-text {
         bottom: 120px;
     }
+
+    .video {
+        height: 10%;
+        width: 100%;
+        gap: 0px;
+    }
+
+    .ticket-container  {
+        padding: 10px 50px;
+        text-align: center;
+        position: relative;
+        top:39px;
+        left:12px;
+        width: 60%;
+        border-radius: 16px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+    }
+
+    .right-ticket{
+        text-align: center ;
+        justify-content: center;
+        margin: auto;
+        right: 30px;
+    }
+
+    .ticket-container ul {
+        flex-direction: column;
+        gap: 5px;        
+        text-align: center;
+        list-style: none;
+        padding: 0px;
+    }
+    
+    
+    
+    
+    .explore-btn {
+        text-align: center;
+    }
+  
+ footer{
+    margin-top: 0px;
+    padding-top: 0%;
+
+    
+ }
+ .offer-ticket {
+    width: 60%;
+    left: 132px;
+    position: bottom;
+    margin-top: 482px;
+ }
+
+ .section-title{
+    margin: 0;
+ }
+ .why,.video, .discount{
+    margin-top: 16px;
+ }
+ .footer-content{
+    margin-top: 24px;
+ }
 
 }
